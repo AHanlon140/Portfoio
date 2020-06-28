@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>100DaysOfCode</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!--Navigation bar and styling -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    .h1 {
+      display: inline-block;
+      padding-top: 50px;
+      margin-top: 10px;
+    }
+
+    #topSection {
+      background-image: url("https://images.unsplash.com/photo-1535850579364-952ef600d22e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1892&q=80");
+      background-size: contain;
+      background-position-x: 100%;
+      background-repeat: no-repeat;
+    }
+
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding-top: 20px;
+      position: absolute;
+      bottom: auto;
+      left: auto;
+      right: auto;
+      height: auto;
+    }
+    
+    #button{
+      z-index: 1;
+    }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    margin-top: 10%;
+    margin-bottom: 8%;
+    transition: .5s ease;
+    background-color: white;
+    z-index: 2;
+}
+
+    .project-card:hover .overlay {
+      display: block;
+      object-fit: contain;
+      opacity: 1;
+    }
+
+    #caption {
+    display: inline;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-text">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="100days.html">#100DaysOfCode<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">About Me</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!--End of Navigation bar-->
+
+  <!--Top Section-->
+  <div class="row text-left" style="width: 100%; height: 250px; margin-top: 55px;" id="topSection">
+    <div class="container-fluid">
+      <h1 class="display-5 m-5" style="font-family: 'Montserrat', sans-serif;">#100DaysOfCodeChallenge</h1>
+      <p class="lead m-5">Join me as I undertake the challenge of coding for a
+        <br />100 days to improve my Javascript skills. Lets go!</p>
+    </div>
+  </div>
+  <hr />
+  <!--End of Top Section-->
+
+  <!--Row One Start-->
+  <div class="container-fluid bg-3 text-center">
+    <h3 style="font-family: 'Montserrat', sans-serif;">Project Gallery</h3><br>
+    <div class="row">
+      <div class="col-sm-3">
+        <p>Day 1:</p>
+        <div class="project-card">
+          <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image">
+          <div class="overlay">
+            <p class="white-text" id="caption">Project One</p>
+          </div>
+        </div>
+       <div>
+          <a target="_blank" class="btn btn-secondary btn-sm btn-block" id="button" href="#">See Live Source Code</a></div>
+      </div>
+
+
+
+      <div class="col-sm-3">
+        <p>Day 2:</p>
+        <div class="project-card">
+          <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image" id="project-image">
+          <div class="overlay">
+            <p class="white-text" id="caption">Project Two</p>
+          </div>
+        </div>
+       <div>
+          <a target="_blank" class="btn btn-secondary btn-sm btn-block" href="#">See Live Source Code</a></div>
+      </div>
+
+
+      <div class="col-sm-3">
+      <p>Day 3:</p>
+      <div class="project-card">
+        <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image" id="project-image">
+        <div class="overlay">
+          <p class="white-text" id="caption">Project Three</p>
+        </div>
+      </div>
+     <div>
+        <a target="_blank" class="btn btn-secondary btn-sm btn-block" href="#">See Live Source Code</a></div>
+    </div>
+
+    <div class="col-sm-3">
+      <p>Day 4:</p>
+      <div class="project-card">
+        <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image" id="project-image">
+        <div class="overlay">
+          <p class="white-text" id="caption">Project Four</p>
+        </div>
+      </div>
+     <div>
+        <a target="_blank" class="btn btn-secondary btn-sm btn-block" href="#">See Live Source Code</a></div>
+    </div>
+    </div>
+  </div><br><br>
+  <!--Row One End-->
+  <!--Row Two-->
+  <div class="container-fluid bg-3 text-center">
+     <div class="row">
+      <div class="col-sm-3">
+        <p>Day 5:</p>
+        <div class="project-card">
+          <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image">
+          <div class="overlay">
+            <p class="white-text" id="caption">Project Five</p>
+          </div>
+        </div>
+       <div>
+          <a target="_blank" class="btn btn-secondary btn-sm btn-block" id="button" href="#">See Live Source Code</a></div>
+      </div>
+
+
+
+      <div class="col-sm-3">
+        <p>Day 6:</p>
+        <div class="project-card">
+          <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image" id="project-image">
+          <div class="overlay">
+            <p class="white-text" id="caption">Project Six</p>
+          </div>
+        </div>
+       <div>
+          <a target="_blank" class="btn btn-secondary btn-sm btn-block" href="#">See Live Source Code</a></div>
+      </div>
+
+
+      <div class="col-sm-3">
+      <p>Day 7:</p>
+      <div class="project-card">
+        <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image" id="project-image">
+        <div class="overlay">
+          <p class="white-text" id="caption">Project Seven</p>
+        </div>
+      </div>
+     <div>
+        <a target="_blank" class="btn btn-secondary btn-sm btn-block" href="#">See Live Source Code</a></div>
+    </div>
+
+    <div class="col-sm-3">
+      <p>Day 8:</p>
+      <div class="project-card">
+        <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image" id="project-image">
+        <div class="overlay">
+          <p class="white-text" id="caption">Project Eight</p>
+        </div>
+      </div>
+     <div>
+        <a target="_blank" class="btn btn-secondary btn-sm btn-block" href="#">See Live Source Code</a></div>
+    </div>
+    </div>
+  </div><br><br>
+  <!--Row Two End-->
+
+  <!--Row Three Start-->
+  <div class="container-fluid bg-3 text-center">
+    <div class="row">
+     <div class="col-sm-3">
+       <p>Day 9:</p>
+       <div class="project-card">
+         <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image">
+         <div class="overlay">
+           <p class="white-text" id="caption">Project Nine</p>
+         </div>
+       </div>
+      <div>
+         <a target="_blank" class="btn btn-secondary btn-sm btn-block" id="button" href="#">See Live Source Code</a></div>
+     </div>
+
+
+
+     <div class="col-sm-3">
+       <p>Day 10:</p>
+       <div class="project-card">
+         <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image" id="project-image">
+         <div class="overlay">
+           <p class="white-text" id="caption">Project Ten</p>
+         </div>
+       </div>
+      <div>
+         <a target="_blank" class="btn btn-secondary btn-sm btn-block" href="#">See Live Source Code</a></div>
+     </div>
+
+
+     <div class="col-sm-3">
+     <p>Day 11:</p>
+     <div class="project-card">
+       <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image" id="project-image">
+       <div class="overlay">
+         <p class="white-text" id="caption">Project Eleven</p>
+       </div>
+     </div>
+    <div>
+       <a target="_blank" class="btn btn-secondary btn-sm btn-block" href="#">See Live Source Code</a></div>
+   </div>
+
+   <div class="col-sm-3">
+     <p>Day 12:</p>
+     <div class="project-card">
+       <img src="soon.jpg" class="img-fluid" style="width:100%" alt="Image" id="project-image">
+       <div class="overlay">
+         <p class="white-text" id="caption">Project Twleve</p>
+       </div>
+     </div>
+    <div>
+       <a target="_blank" class="btn btn-secondary btn-sm btn-block" href="#">See Live Source Code</a></div>
+   </div>
+   </div>
+ </div><br><br>
+  <!--Row Three End-->
+
+  <footer class="container-fluid text-center">
+    <p>Created 2020 by Annika Hanlon</p>
+  </footer>
+
+</body>
+
+</html>
